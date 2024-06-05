@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+body {
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  background-color: #f4f4f4;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  margin: 0 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input {
+  padding: 0.5rem;
+  margin: 1rem 0;
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #333;
+  border-radius: 5px;
+}
+
+.search-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.books-container {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 20px;
+}
+
+.book-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 1rem;
+  width: 200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.book-card h3, .book-card p {
+  margin: 0.5rem 0;
+}
+
+button {
+  padding: 0.5rem;
+  background-color: #4CAF50;
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  background-color: #45a049;
 }
