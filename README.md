@@ -1,17 +1,24 @@
 Personal Bookshelf
+
 Objective
+
 The objective of this project is to develop a React application that allows users to search for books using the Open Library API and maintain a personal bookshelf in the browser using localStorage.
 
 Instructions
+
+
 Book Search Page
+
 Create an input field for users to type in a book's name.
 Display search results in real-time as the user types.
 Use the Open Library API for fetching results:
 API Endpoint: https://openlibrary.org/search.json?q=YOUR_QUERY&limit=10&page=1
 Query Parameters:
+
 q: Name of the book.
 limit: Set to 10 results per page.
 page: Only display results from page 1.
+
 Display the search results in a list of cards. Each card should represent a book result.
 Personal Bookshelf Page
 Enable users to add books from the search results to a "My Bookshelf" page.
